@@ -1,0 +1,50 @@
+body {
+margin: 0;
+font-family: 'Arial', sans-serif;
+background: black url('https://www.transparenttextures.com/patterns/stardust.png') repeat;
+color: white;
+text-align: center;
+}
+
+.container {
+max-width: 800px;
+margin: 0 auto;
+padding: 20px;
+}
+
+.carousel {
+position: relative;
+height: 400px;
+overflow: hidden;
+}
+
+.carousel img {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 400px;
+object-fit: cover;
+opacity: 0;
+transition: opacity 1s ease-in-out;
+}
+
+.carousel img.active {
+opacity: 1;
+}
+
+.mensagem h1 {
+font-family: 'Georgia', serif;
+color: red;
+margin-top: 30px;
+}
+
+.mensagem p {
+font-size: 1.2em;
+line-height: 1.5em;
+margin: 20px;
+}
+
+.musica {
+margin-top: 20px;
+}

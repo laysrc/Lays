@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>De Lays para Carlinhos</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <div class="container">
+    <div class="carousel">
+      <img src="IMG_5545.jpg" alt="Foto 1" class="active">
+      <img src="FullSizeRender.jpg" alt="Foto 2">
+      <img src="60FFE7A3-F640-4368-9AA6-816F52566680.JPG" alt="Foto 3">
+    </div>
+
+    <div class="mensagem">
+      <h1>De Lays para Carlinhos</h1>
+      <p>Meu bem é inexplicavél o quanto eu te admiro!!! Ninguem me tira os sorrisos mais sinceros que vc me tira, sou muito grata de ter vc na minha vida e por todos os momentos ao seu lado, a minha vida é muito mais feliz com vc, vc é incrivel, obrigada por tanto, por todo apoio e parceria que preciso, nosso amor veio de outras vidas e eu te amarei em todas elas . </p>
+    </div>
+
+    <div class="musica">
+      <audio controls>
+        <source src="Henrique e Juliano Realidade ou fantasia  Video DVD To Be Brasilia + Musica DVD Ao Vivo Em Brasilia.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+  </div>
+
+  <script>
+    let imgs = document.querySelectorAll('.carousel img');
+    let index = 0;
+    setInterval(() => {
+      imgs[index].classList.remove('active');
+      index = (index + 1) % imgs.length;
+      imgs[index].classList.add('active');
+    }, 3000);
+  </script>
+
+</body>
+</html>
